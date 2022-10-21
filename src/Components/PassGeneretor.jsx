@@ -2,6 +2,7 @@ import React from "react";
 import "/src/App.css";
 import { FaUserLock } from "react-icons/fa";
 import { useState } from "react";
+import Img from "../assets/feature.svg";
 const PassGeneretor = () => {
   const [range, setRange] = useState(4);
   const [radomPass, setRadomPass] = useState(null);
@@ -113,7 +114,7 @@ const PassGeneretor = () => {
               onChange={(e) => setRange(e.target.value)}
             />
             <div className="flex justify-center mt-10">
-              <img src="./src/assets/feature.svg" className="w-1/2"></img>
+              <img src={Img} className="w-1/2"></img>
             </div>
           </div>
         </main>
